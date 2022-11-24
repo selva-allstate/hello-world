@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Greeting from './components/Greeting/Greeting';
+import SongList from './components/Songs/SongList';
+import Payments from './components/Payments/Payments';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>This is Greeting</p>
+      <Greeting name="Selva" age="21"/>
+      <Greeting name="Chandra" age = "21"/>
+      <SongList />
+      <Payments name="Payments" />
     </div>
   );
 }
